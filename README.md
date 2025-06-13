@@ -98,3 +98,56 @@ This is a **Laravel 11 RESTful API** for managing product inventory with stock s
     "quantity": "integer"
 }
 ```
+
+---
+
+### ⚙️ Setup Instruction
+
+Follow these steps to run the project locally:
+
+```bash
+# Clone repository
+git clone https://github.com/your-username/your-repo.git
+
+# Move into project directory
+cd your-repo
+
+# Install PHP dependencies
+composer install
+
+# Copy .env file
+cp .env.example .env
+
+# Generate application key
+php artisan key:generate
+
+# Setup your database configuration in .env file
+
+# Run migrations
+php artisan migrate
+
+# (Optional) Seed initial data
+php artisan db:seed
+
+# Serve the application
+php artisan serve
+```
+
+---
+
+### 🛡️ Security Note
+
+-   Sanctum protects all routes except login & register.
+-   Input validation included to prevent invalid data.
+-   All stock updates are wrapped in database transactions to prevent inconsistency.
+
+---
+
+### 📌 Author
+
+Made by Sastra Gulo 🚀
+Fullstack Developer
+
+LinkedIn: linkedin.com/in/sastra-harapan-gulo
+
+Github: github.com/sastraharapangulo
